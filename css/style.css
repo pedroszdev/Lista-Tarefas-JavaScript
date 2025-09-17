@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.inter-title {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Negrito */
+  font-style: normal;
+}
+.cabecalho{
+    background-color: #E0DCE4;
+    height: 200px;
+    align-content: center;
+}
+.cabecalho h1{
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 50px;
+    color: #6F3CC3;
+  
+}
+.barra-tarefas{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 174px;
+    display: flex;
+    gap: 8px;
+}
+.barra-tarefas input{
+    width: 618px;
+    height: 52px;
+    border: 1px solid #E0DCE4;
+    border-radius: 8px;
+    padding-left: 18px;
+    font-size: 16px;
+    color: #6B6572;
+    font-family: "Inter", sans-serif;
+    
+}
+.barra-tarefas button{
+    width: 110px;
+    border-radius: 8px;
+    background-color: #6F3CC3;
+    color: #F0EDF2;
+    border: none;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+}
+
+.tarefas{
+    margin: 120px auto;
+    width: 756px;
+}
+.tarefas ul{
+    list-style: none;
+    
+
+}
+.tarefas ul .tarefa{
+    background-color: #e8e5eb;
+    margin: 15px 0px;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #262428;
+    border: 1px solid #D1CBD7;
+    font-family: "Inter", sans-serif;
+    gap: 10px;
+}
+
+input[type="checkbox"] {
+    appearance: none; /* remove o estilo padrão */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2.2px solid #6F3CC3;
+    border-radius: 50%; /* deixa redondo */
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s, border 0.3s;
+}
+
+input[type="checkbox"]:checked {
+  background: #479C6E; /* cor ao marcar */
+  border: none;
+}
+.checkado{
+    color: #6B6572;
+    background-color: #ffffff !important;
+    text-decoration: line-through;
+}
+.tarefas ul button{
+    background-color: #6F3CC3;
+    color: #F0EDF2;
+    padding: 7px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+@media (max-width:770px) and (min-width:581px){
+    .barra-tarefas input{
+        width: 467px;
+    
+    
+    }
+    .barra-tarefas button{
+        width: 82px;
+    }
+    .tarefas{
+        margin: 120px auto;
+        width: 577px;
+    }
+    .tarefas ul .tarefa{
+        font-size: 14px;
+    }
+    .tarefas ul button{
+        min-width: 56px;
+    }
+}
+@media (max-width:580px){
+    .barra-tarefas input{
+        width: 238px;
+    }
+    .barra-tarefas button{
+        width: 61px;
+    }
+    .tarefas{
+        margin: 120px auto;
+        width: 327px;
+    }
+    .tarefas ul .tarefa{
+        font-size: 10px;
+    }
+    .tarefas ul button{
+        min-width: 56px;
+    }
+    
+}
+.not-tarefas{
+    text-align: center;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    color: #6B6572;
+}
