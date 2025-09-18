@@ -6,7 +6,16 @@ let NotTarefa = document.querySelector(".not-tarefas");
 
 botaoEnviarTarefa.addEventListener("click", function (event) {
   criarTarefa();
+  limpaInput()
 });
+
+input.addEventListener('keypress',function(e){
+    if (e.keyCode === 13){
+        if (!input.value) return;
+        criarTarefa();
+        limpaInput()
+    }
+})
 
 listaTarefas.addEventListener("click", function (event) {
   if (event.target.id === "apagar-tarefa") {

@@ -11,7 +11,7 @@
   font-style: normal;
 }
 .cabecalho{
-    background-color: #E0DCE4;
+    background-color: #f1f1f0;
     height: 200px;
     align-content: center;
 }
@@ -19,7 +19,7 @@
     text-align: center;
     font-family: "Inter", sans-serif;
     font-size: 50px;
-    color: #6F3CC3;
+    color: #02779e;
   
 }
 .barra-tarefas{
@@ -44,7 +44,7 @@
 .barra-tarefas button{
     width: 110px;
     border-radius: 8px;
-    background-color: #6F3CC3;
+    background-color: #02779e;
     color: #F0EDF2;
     border: none;
     font-size: 16px;
@@ -62,11 +62,11 @@
 
 }
 .tarefas ul .tarefa{
-    background-color: #e8e5eb;
+    background-color: #f1f1f0;
     margin: 15px 0px;
     border-radius: 8px;
     padding: 16px;
-    font-size: 14px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -82,7 +82,7 @@ input[type="checkbox"] {
     -moz-appearance: none;
     width: 18px;
     height: 18px;
-    border: 2.2px solid #6F3CC3;
+    border: 2.2px solid #02779e;
     border-radius: 50%; /* deixa redondo */
     outline: none;
     cursor: pointer;
@@ -99,7 +99,7 @@ input[type="checkbox"]:checked {
     text-decoration: line-through;
 }
 .tarefas ul button{
-    background-color: #6F3CC3;
+    background-color: #f42228;
     color: #F0EDF2;
     padding: 7px;
     border: none;
@@ -122,7 +122,7 @@ input[type="checkbox"]:checked {
         width: 577px;
     }
     .tarefas ul .tarefa{
-        font-size: 14px;
+        font-size: 18px;
     }
     .tarefas ul button{
         min-width: 56px;
